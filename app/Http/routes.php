@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return "karisma brave";
+    return "karisma brave 35.2";
 });
 
 /*
