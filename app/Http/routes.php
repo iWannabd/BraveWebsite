@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return "karisma brave 35.2";
-});
+Route::get('/', 'PagesController@home');
 
 /*
 |--------------------------------------------------------------------------
