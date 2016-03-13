@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>Brave</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -265,6 +264,9 @@
   .plain{
     text-align: left;
   }
+  .geser-modal{
+    margin-top: 100px;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -302,13 +304,13 @@
   <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-      <h2>What is this?</h2><br>
+      <h2>About</h2><br>
       <h4>Brave (Bandung Creativ Exhibition) adalah event yang diadakan tiap tahun oleh Karisma ITB yang bertujuan untuk mengajak remaja SMP dan SMA melakukan kontribusi berupa ide-ide kreatif untuk dunia yang lebih baik. Maka dari itu kami mengajak kalian remaja SMP dan SMA untuk mengikuti kegiatan ini.</h4><br>
       <p>Let's join us!</p>
     </div>
     <div class="col-sm-3"></div>
   </div>
-  <div class="row competitions">
+  <div class="row competitions slideanim">
     <div class="col-sm-3"></div>
     <div class="col-sm-2">
       <img src="img/book.svg" height="100px" />
@@ -429,25 +431,25 @@
 <div id="training" class="container-fluid text-center">
   <h2>Training</h2>
   <h4>Selain lomba kami juga mengadakan training</h4>
-  <div class="row plain-text">
+  <div class="row plain-text slideanim">
     <div class="col-sm-1"></div>
     <div class="col-sm-3 journalist"></div>
     <div class="col-sm-7">
       <h4>Traning Jurnalistik</h4>
       <p>Perluas wawasan jurnalistik mu dengan mengikuti training ini, acara training ini akan menghadirkan seorang pemateri yang sangat berpengalaman di bidang jurnalistik.</p>
-      <p>Training ini akan dilaksanakan di ____ pada tanggal 27 Maret 2016 pada pukul ___</p>
-      <button type="button" class="btn btn-warning">Pesan Tiket</button>
+      <p>Training ini akan dilaksanakan di Salman ITB pada tanggal 27 Maret 2016 pada pukul 9:00 sampai 12:00</p>
+      <a href="https://www.eventbrite.com/e/brave-trainging-tickets-23005836075" class="btn btn-warning">Pesan Tiket</a>
     </div>
     <div class="col-sm-1"></div>
   </div>
 
-  <div class="row plain-text">
+  <div class="row plain-text slideanim">
     <div class="col-sm-1"></div>
     <div class="col-sm-7">
       <h4>Traning Teknologi Informasi Komunikasi</h4>
       <p>Perluas wawasan <i>ICT</i> mu dengan mengikuti training ini, acara training ini akan menghadirkan seorang pemateri yang sangat berpengalaman di bidang <i>ICT</i>.</p>
-      <p>Training ini akan dilaksanakan di ____ pada tanggal 27 Maret 2016 pada pukul ___</p>
-      <button type="button" class="btn btn-warning">Pesan Tiket</button>
+      <p>Training ini akan dilaksanakan di Salman ITB pada tanggal 27 Maret 2016 pada pukul 9:00 sampai 12:00</p>
+      <a href="https://www.eventbrite.com/e/brave-trainging-tickets-23005836075" class="btn btn-warning">Pesan Tiket</a>
     </div>
     <div class="col-sm-3 icete"></div>
     <div class="col-sm-1"></div>
