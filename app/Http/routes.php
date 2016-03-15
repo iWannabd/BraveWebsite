@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PagesController@home');
+Route::post('/','PagesController@simpan');
 
 /*
 |--------------------------------------------------------------------------

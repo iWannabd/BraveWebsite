@@ -266,10 +266,13 @@
   }
   .geser-modal{
     margin-top: 100px;
+    color:black;
+    text-align: left;
   }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -296,6 +299,21 @@
 
 <div class="jumbotron text-center">
   <img src="img/logo.png" height="100px" />
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      @if (session('berhasil'))
+      <div class="alert alert-success">
+        {{ session('berhasil') }}
+      </div>
+      @endif
+      @foreach ($errors->all() as $error)
+                <p class="alert alert-danger">{{ $error }}</p>
+      @endforeach
+
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
   <div id="img_header"></div>
 </div>
 
@@ -316,6 +334,7 @@
       <img src="img/book.svg" height="100px" />
       <h3>Lomba Cerpen</h3>
       <p>untuk pelajar SMA</p>
+      @include('daftarcerpen')
     </div>
     <div class="col-sm-2">
       <img src="img/science.svg" height="100px" />
