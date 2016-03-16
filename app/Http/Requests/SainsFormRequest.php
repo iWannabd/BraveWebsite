@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class CerpenFormRequest extends Request
+class SainsFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,14 +24,13 @@ class CerpenFormRequest extends Request
     public function rules()
     {
         return [
-            //
-            'nama' => 'required',
+            'namatim' => 'required',
+            'nama1' => 'required',
+            'nama2' => 'required',
             'sekolah' => 'required',
-            'surel' => 'required',
+            'jenjang' => 'required',
             'kontak' => 'required',
-            'judul' => 'required',
-            'isicerpen' => 'required|mimes:pdf',
-            'isicerpen' => 'max:2000'
+            'email' => 'required',
         ];
     }
 }

@@ -53,53 +53,64 @@
         <div class="mainform">
           {!! Form::open(
             array(
-              'url' => '/ikutcerpen',
+              'url' => '/ikutsains',
               'class' => 'form',
               'files' => true)) !!}
 
             <!-- token -->
             <input type="hidden" name="_token" value="{!! csrf_token() !!}">
 
-            <!-- nama peserta -->
+            <!-- nama tim -->
             <div class="form-group">
-              <label for="email">Nama Lengkap</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+              <label for="namatim">Nama Tim</label>
+              <input type="text" class="form-control" id="namatim" name="namatim">
             </div>
 
-            <!-- asal sekolah peserta -->
             <div class="form-group">
-              <label for="email">Asal sekolah</label>
+              <label for="nama1">Nama Ketua</label>
+              <input type="text" class="form-control" id="nama1" name="nama1">
+            </div>
+
+            <div class="form-group">
+              <label for="nama2">Nama Anggota 1</label>
+              <input type="text" class="form-control" id="nama2" name="nama2">
+            </div>
+
+            <div class="form-group">
+              <label for="sekolah">Asal Sekolah</label>
               <input type="text" class="form-control" id="sekolah" name="sekolah">
             </div>
 
-            <!-- email peserta -->
             <div class="form-group">
-              <label for="email">Alamat Surel</label>
-              <input type="email" class="form-control" id="surel" name="surel">
+              <label for="jenjang">Jenjang</label>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" class="form-control" id="jenjang" name="jenjang" value="smp">SMP
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" class="form-control" id="jenjang" name="jenjang" value="sma">SMA
+                </label>
+              </div>
+
             </div>
 
-            <!-- hp peserta -->
             <div class="form-group">
               <label for="kontak">Nomor HP</label>
               <input type="text" class="form-control" id="kontak" name="kontak">
             </div>
 
-            <!-- judul cerpen -->
             <div class="form-group">
-              <label for="email">Judul Cerpen</label>
-              <input type="text" class="form-control" id="judul" name="judul">
-            </div>
-
-            <!-- upload cerpen -->
-            <div class="form-group">
-                {!! Form::label('Upload Cerpen max 2mb') !!}
-                {!! Form::file('isicerpen', null) !!}
+              <label for="email">Alamat Surel</label>
+              <input type="email" class="form-control" id="email" name="email">
             </div>
 
             <div class="modal-footer">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-
 
           {!! Form::close() !!}
         </div>

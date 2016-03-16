@@ -13,14 +13,16 @@ class CreateCerpensTable extends Migration
     public function up()
     {
         Schema::create('cerpens', function (Blueprint $table) {
-          $table->increments('id');
-          $table->timestamps();
+            $table->increments('id');
+            $table->timestamps();
 
-          $table->string('nama');
-          $table->string('sekolah');
-          $table->string('surel');
-          $table->string('judul');
-          $table->tinyInteger('bayar')->default(0);
+            $table->string('nama');
+            $table->string('sekolah');
+            $table->string('surel');
+            $table->string('kontak');
+            $table->string('judul');
+            $table->tinyInteger('bayar')->default(0);
+            $table->string('slug')->nullable();
         });
     }
 

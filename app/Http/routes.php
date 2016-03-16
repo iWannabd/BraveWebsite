@@ -12,7 +12,14 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::post('/','PagesController@simpan');
+Route::get('/ikutcerpen', 'PagesController@formcerpen');
+Route::get('/ikutkartul', 'PagesController@formkartul');
+Route::get('/ikutsains', 'PagesController@formsains');
+
+
+Route::post('/ikutcerpen','FormCerpenController@simpan');
+Route::post('/ikutkartul','FormKartulController@simpan');
+Route::post('/ikutsains','FormSainsController@simpan');
 
 /*
 |--------------------------------------------------------------------------

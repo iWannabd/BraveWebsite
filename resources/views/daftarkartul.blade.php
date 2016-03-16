@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Formulir Cerpen Brave</title>
+    <title>Formulir Karya Tulis Brave</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -53,7 +53,7 @@
         <div class="mainform">
           {!! Form::open(
             array(
-              'url' => '/ikutcerpen',
+              'url' => '/ikutkartul',
               'class' => 'form',
               'files' => true)) !!}
 
@@ -62,8 +62,20 @@
 
             <!-- nama peserta -->
             <div class="form-group">
-              <label for="email">Nama Lengkap</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+              <label for="namaketua">Nama Lengkap Ketua</label>
+              <input type="text" class="form-control" id="namaketua" name="namaketua">
+            </div>
+
+            <!-- nama anggota1 -->
+            <div class="form-group">
+              <label for="namaanggota1">Nama Lengkap Anggota 1</label>
+              <input type="text" class="form-control" id="namaanggota1" name="namaanggota1">
+            </div>
+
+            <!-- nama anggota2 -->
+            <div class="form-group">
+              <label for="namaanggota2">Nama Lengkap Anggota 2</label>
+              <input type="text" class="form-control" id="namaanggota2" name="namaanggota2">
             </div>
 
             <!-- asal sekolah peserta -->
@@ -74,39 +86,47 @@
 
             <!-- email peserta -->
             <div class="form-group">
-              <label for="email">Alamat Surel</label>
-              <input type="email" class="form-control" id="surel" name="surel">
+              <label for="surelketua">Alamat Surel Ketua</label>
+              <input type="email" class="form-control" id="surelketua" name="surelketua">
             </div>
 
-            <!-- hp peserta -->
+            <!-- nokontak peserta -->
             <div class="form-group">
-              <label for="kontak">Nomor HP</label>
-              <input type="text" class="form-control" id="kontak" name="kontak">
+              <label for="kontakketua">Nomor HP Ketua</label>
+              <input type="text" class="form-control" id="kontakketua" name="kontakketua">
             </div>
 
-            <!-- judul cerpen -->
+            <!-- tema -->
             <div class="form-group">
-              <label for="email">Judul Cerpen</label>
-              <input type="text" class="form-control" id="judul" name="judul">
+              <label for="tema">Tema Karya Tulis</label>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" class="form-control" id="tema" name="tema" value="tema1">The Innovation of Green Technology
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" class="form-control" id="tema" name="tema" value="tema2">Innovative Business Plan
+                </label>
+              </div>
             </div>
 
             <!-- upload cerpen -->
             <div class="form-group">
-                {!! Form::label('Upload Cerpen max 2mb') !!}
-                {!! Form::file('isicerpen', null) !!}
+                {!! Form::label('Upload Karya Tulis max 5mb') !!}
+                {!! Form::file('karyatulis', null) !!}
             </div>
 
             <div class="modal-footer">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
 
-
           {!! Form::close() !!}
         </div>
       </div>
-      <div class="col-sm-3">
-
-      </div>
+      <div class="col-sm-3"></div>
     </div>
   </body>
 </html>

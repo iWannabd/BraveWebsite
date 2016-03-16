@@ -299,21 +299,6 @@
 
 <div class="jumbotron text-center">
   <img src="img/logo.png" height="100px" />
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-      @if (session('berhasil'))
-      <div class="alert alert-success">
-        {{ session('berhasil') }}
-      </div>
-      @endif
-      @foreach ($errors->all() as $error)
-                <p class="alert alert-danger">{{ $error }}</p>
-      @endforeach
-
-    </div>
-    <div class="col-sm-4"></div>
-  </div>
   <div id="img_header"></div>
 </div>
 
@@ -334,17 +319,19 @@
       <img src="img/book.svg" height="100px" />
       <h3>Lomba Cerpen</h3>
       <p>untuk pelajar SMA</p>
-      @include('daftarcerpen')
+      @include('skcerpen')
     </div>
     <div class="col-sm-2">
       <img src="img/science.svg" height="100px" />
       <h3>Lomba Sains</h3>
       <p>untuk pelajar SMP dan SMA</p>
+      @include('sksains')
     </div>
     <div class="col-sm-2">
       <img src="img/check.svg" height="100px" />
       <h3>Lomba Karya Tulis Ilmiah</h3>
       <p>untuk pelajar SMA</p>
+      @include('skkartul')
     </div>
     <div class="col-sm-3"></div>
   </div>

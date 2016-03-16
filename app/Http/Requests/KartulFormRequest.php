@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class CerpenFormRequest extends Request
+class KartulFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,13 +25,14 @@ class CerpenFormRequest extends Request
     {
         return [
             //
-            'nama' => 'required',
+            'namaketua' => 'required',
+            'namaanggota1' => 'required',
+            'namaanggota2' => 'required',
             'sekolah' => 'required',
-            'surel' => 'required',
-            'kontak' => 'required',
-            'judul' => 'required',
-            'isicerpen' => 'required|mimes:pdf',
-            'isicerpen' => 'max:2000'
+            'surelketua' => 'required',
+            'kontakketua' => 'required',
+            'tema' => 'required',
+            'karyatulis' => 'required|mimes:docx|max:5000',
         ];
     }
 }
